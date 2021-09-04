@@ -11,6 +11,7 @@
     height: 80px;
     font-size: 40px;
     margin-top: 60px;
+
    }
    #board {
     width: 410px;
@@ -28,15 +29,28 @@
     top: 250px;
     left: calc(50% - 380px);
    }
+#shuffle{
+  position: relative;
+right: -131px;
+}
+#subbtn{
+  position: relative;
+right: 162px;
+}
+
 
    #moves {
-    font-size: 40px;
+
     line-height: 80px;
     height: 80px;
     width: 300px;
     margin: auto;
     border: 1px solid #000;
     border-radius: 5px;
+    background-color: aliceblue;
+
+font-size: 3rem !important;
+
    }
    .btn,
    .numbers,
@@ -77,7 +91,7 @@
    }
    .container{
      display: flex;
-justify-content: space-evenly;
+justify-content: center;
 top: -684px;
 position: relative;
    }
@@ -90,4 +104,10 @@ position: relative;
     right: -71px;
     justify-content: space-between;
   }
+}
+
+p{
+  font-family: sans-serif;
+  /* position: relative;
+  bottom: 132px */
 }

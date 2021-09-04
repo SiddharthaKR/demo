@@ -20,6 +20,7 @@ class Puzzle {
      document.getElementById("moves").innerText = this.moves;
      document.getElementById("done").style.visibility = "hidden";
      document.getElementById("submittedGame").style.visibility = "hidden";
+     document.getElementById("subbtn").style.visibility = "hidden";
 
      let t = 1;
      for (let y = 0; y < 6; y++) {
@@ -94,7 +95,8 @@ class Puzzle {
       this.moves = 0;
       document.getElementById("moves").innerText = this.moves;
       document.getElementById("shuffle").innerText = "RESTART";
-
+      document.getElementById("shuffle").style.visibility = "hidden";
+      document.getElementById("subbtn").style.visibility = "visible";
 
         Clock.start();
 
@@ -188,8 +190,7 @@ class Puzzle {
    }
    let p=count-1;
 
-   document.getElementById("submittedGame").innerHTML= "you have made " + movesTaken +" moves and matched "+ p +" boxes";
-   document.getElementById("submittedGame").style.visibility = "visible";
+   
 
   document.getElementById("subbtn").value=movesTaken
   document.getElementById("one").value=minuteTaken

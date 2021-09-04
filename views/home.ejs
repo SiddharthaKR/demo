@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./public/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
-	<title>16 Puzzle</title>
+	<title>TECHNO 16 PUZZLE</title>
 </head>
 
 <body>
@@ -18,28 +18,35 @@
 
 
 	</section>
+	<div class="containerTwo">
+		<p>Slide the grid squares around so that the numbers end up in consecutive order from the top left corner.
+Click on the arrows at the edges of the grid to move a row or column left, right, up or down. The square that falls off the end of the row comes back on the other end.Click on shuffle to start game.</p>
+	</div>
 
-	<div id="done">WELL DONE!</div>
+	<div id="done">WELL DONE! CLICK SUBMIT BUTTON</div>
 	<div id="submittedGame"></div>
 	<div id="board"></div>
 	<div id="moves"></div>
 	<div class="container">
 
 
-	<button class="but" id="shuffle" name="hidInputShuffle"  value= "" >SHUFFLE</button>
+	<button class="but" id="shuffle" name="hidInputShuffle" value= "">START GAME</button>
 
 
 
 
 <form class="" action="/" method="post">
-     <button class="but" id="subbtn" type="submit"  onclick="submitFunction()" name="submitBtn" value="">STOP GAME</button>
+     <button class="but" id="subbtn" type="submit"  onclick="submitFunction()" name="submitBtn" value="">SUBMIT GAME</button>
 		 <input type="hidden" name="hidInputOne" id="one"  value= ""></input>
 		 <input type="hidden" name="hidInputTwo" id="two"  value= ""></input>
 		 <input type="hidden" name="hidInputThree" id="three"  value= ""></input>
 		 <input type="hidden" name="hidInputFour" id="four"  value= ""></input>
 
 		 </form>
+
 		 </div>
+
+
     <script src="./public/index.js"></script>
 	<script src="./dist/game.min.js" type="module"></script>
 
